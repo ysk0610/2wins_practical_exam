@@ -1,0 +1,17 @@
+# --- Keras / TensorFlow ---
+*.keras
+*.h5
+
+# --- データセット ---
+dataset_split/
+dataset/
+
+# --- Pythonキャッシュ ---
+__pycache__/
+*.pyc
+
+# --- OS固有ファイル ---
+.DS_Store
+
+# --- Conda環境 ---
+2wins_env/
