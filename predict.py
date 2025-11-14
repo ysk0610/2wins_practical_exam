@@ -5,7 +5,7 @@ import os
 from tensorflow.keras.utils import load_img, img_to_array
 
 # --- 1. 基本設定 ---
-MODEL_PATH = 'best_model.keras'
+MODEL_PATH = 'finetuned_best_model.keras'
 IMG_SIZE = (224, 224) # train.py と全く同じサイズ
 CLASS_NAMES = ['good', 'bad'] # train.py と全く同じクラス順
 
@@ -63,7 +63,7 @@ def main():
         # 0に近いほど 'good' (クラス0), 1に近いほど 'bad' (クラス1)
         score = prediction[0][0] 
         
-        threshold = 0.5 # 判定の境界値
+        threshold = 0.8 # 判定の境界値
         
         if score < threshold:
             predicted_class = CLASS_NAMES[0] # 'good'
