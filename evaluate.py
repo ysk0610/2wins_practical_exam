@@ -15,7 +15,7 @@ CLASS_NAMES = ['good', 'bad']
 
 # ★ 評価したい閾値（しきい値）
 # 0.5 が厳しそうなら 0.4 や 0.3 に変更して再実行する
-THRESHOLD = 0.3 
+THRESHOLD = 0.35
 
 # ResNet50 の前処理関数
 preprocess_input = tf.keras.applications.resnet50.preprocess_input
