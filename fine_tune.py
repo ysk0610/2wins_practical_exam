@@ -118,9 +118,9 @@ model.compile(
 )
 
 checkpoint = ModelCheckpoint(
-    filepath='finetuned_best_model.keras', # 保存ファイル名を変更
-    monitor='val_recall',                 # 監視対象をKPI（再現率）に変更
-    mode='max',                           # 'val_recall' なので max を目指す
+    filepath='balanced_best_model.keras', # 1. 保存ファイル名を変更
+    monitor='val_loss',                   # 2. 監視対象を「損失」に変更
+    mode='min',                           # 3. 損失(loss)なので最小(min)を目指す
     save_best_only=True
 )
 
