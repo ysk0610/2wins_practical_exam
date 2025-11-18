@@ -14,4 +14,5 @@ __pycache__/
 .DS_Store
 
 # --- Conda環境 ---
-2wins_env/
+2wins_env/venv/
+venv/
